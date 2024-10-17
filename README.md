@@ -1,9 +1,9 @@
 # print-iptables-logs
-Print the iptables logs on all the chains
+**Print the iptables logs on all the chains**
 
-How to track the linux packet in the kernel through iptables.
+**How to track the linux packet in the kernel through iptables (on all the tables and all the chains).**
 
-use the below commands:
+**use the below commands:**
 
 iptables -t mangle -I PREROUTING --protocol tcp --tcp-flags FIN FIN -j LOG --log-prefix MANGLE-PRE::
 
